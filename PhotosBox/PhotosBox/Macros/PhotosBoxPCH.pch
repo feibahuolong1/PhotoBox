@@ -1,0 +1,18 @@
+//
+//  PhotosBoxPCH.pch
+//  PhotosBox
+//
+//  Created by Broc on 2017/4/5.
+//  Copyright © 2017年 Broc. All rights reserved.
+//
+
+#ifndef PhotosBoxPCH_pch
+#define PhotosBoxPCH_pch
+
+
+
+#import "Macros.h"
+
+#import "User.h"
+
+#endif /* PhotosBoxPCH_pch */
