@@ -48,8 +48,8 @@ return _instance; \
 
 #define PB_ROOT_ANSWER @"Broc1993!"
 
-
-
+// 弹窗
+#define alert(msg) [[[UIAlertView alloc]initWithTitle:nil message:msg delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil, nil] show];
 
 
 

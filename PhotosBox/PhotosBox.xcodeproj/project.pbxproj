@@ -16,6 +16,12 @@
 		A140B5D21E94D495004F9A7D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A140B5CF1E94D495004F9A7D /* LoginViewController.xib */; };
 		A140B5D61E94D5E0004F9A7D /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A140B5D51E94D5E0004F9A7D /* User.m */; };
 		A140B5DB1E94DA90004F9A7D /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A140B5DA1E94DA90004F9A7D /* UserInfo.m */; };
+		A140B5DF1E9615C9004F9A7D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A140B5DD1E9615C9004F9A7D /* HomeViewController.m */; };
+		A140B5E01E9615C9004F9A7D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A140B5DE1E9615C9004F9A7D /* HomeViewController.xib */; };
+		A140B5E41E9618ED004F9A7D /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A140B5E21E9618ED004F9A7D /* RegisterViewController.m */; };
+		A140B5E51E9618ED004F9A7D /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A140B5E31E9618ED004F9A7D /* RegisterViewController.xib */; };
+		A140B5EC1E96351E004F9A7D /* ChangePassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A140B5EA1E96351E004F9A7D /* ChangePassWordViewController.m */; };
+		A140B5ED1E96351E004F9A7D /* ChangePassWordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A140B5EB1E96351E004F9A7D /* ChangePassWordViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,15 @@
 		A140B5D81E94D839004F9A7D /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		A140B5D91E94DA90004F9A7D /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
 		A140B5DA1E94DA90004F9A7D /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		A140B5DC1E9615C9004F9A7D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A140B5DD1E9615C9004F9A7D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		A140B5DE1E9615C9004F9A7D /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		A140B5E11E9618ED004F9A7D /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		A140B5E21E9618ED004F9A7D /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		A140B5E31E9618ED004F9A7D /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		A140B5E91E96351E004F9A7D /* ChangePassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePassWordViewController.h; sourceTree = "<group>"; };
+		A140B5EA1E96351E004F9A7D /* ChangePassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePassWordViewController.m; sourceTree = "<group>"; };
+		A140B5EB1E96351E004F9A7D /* ChangePassWordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePassWordViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,9 +183,18 @@
 		A140B5CC1E94D495004F9A7D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A140B5DC1E9615C9004F9A7D /* HomeViewController.h */,
+				A140B5DD1E9615C9004F9A7D /* HomeViewController.m */,
+				A140B5DE1E9615C9004F9A7D /* HomeViewController.xib */,
 				A140B5CD1E94D495004F9A7D /* LoginViewController.h */,
 				A140B5CE1E94D495004F9A7D /* LoginViewController.m */,
 				A140B5CF1E94D495004F9A7D /* LoginViewController.xib */,
+				A140B5E11E9618ED004F9A7D /* RegisterViewController.h */,
+				A140B5E21E9618ED004F9A7D /* RegisterViewController.m */,
+				A140B5E31E9618ED004F9A7D /* RegisterViewController.xib */,
+				A140B5E91E96351E004F9A7D /* ChangePassWordViewController.h */,
+				A140B5EA1E96351E004F9A7D /* ChangePassWordViewController.m */,
+				A140B5EB1E96351E004F9A7D /* ChangePassWordViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -299,6 +323,9 @@
 			files = (
 				A140B5D21E94D495004F9A7D /* LoginViewController.xib in Resources */,
 				A140B59F1E94C6CF004F9A7D /* Assets.xcassets in Resources */,
+				A140B5E01E9615C9004F9A7D /* HomeViewController.xib in Resources */,
+				A140B5E51E9618ED004F9A7D /* RegisterViewController.xib in Resources */,
+				A140B5ED1E96351E004F9A7D /* ChangePassWordViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,10 +351,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A140B5D61E94D5E0004F9A7D /* User.m in Sources */,
+				A140B5EC1E96351E004F9A7D /* ChangePassWordViewController.m in Sources */,
 				A140B5971E94C6CF004F9A7D /* AppDelegate.m in Sources */,
 				A140B5941E94C6CF004F9A7D /* main.m in Sources */,
 				A140B5DB1E94DA90004F9A7D /* UserInfo.m in Sources */,
+				A140B5E41E9618ED004F9A7D /* RegisterViewController.m in Sources */,
 				A140B5D11E94D495004F9A7D /* LoginViewController.m in Sources */,
+				A140B5DF1E9615C9004F9A7D /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,6 +24,9 @@
 // 保存找回密码问题
 + (void)saveHintQuestion:(NSString *)question;
 
+// 获取密码问题
++ (NSString *)toGetQuestion;
+
 // 保存找回密码问题答案
 + (void)saveAnswer:(NSString *)answer;
 

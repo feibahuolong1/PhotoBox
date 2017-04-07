@@ -71,7 +71,10 @@
 + (void)saveHintQuestion:(NSString *)question {
     [self setObject:question forKey:PB_HINTQUESTION];
 }
-
+// 获取密码问题
++ (NSString *)toGetQuestion{
+    return [self objectForKey:PB_HINTQUESTION];
+}
 // 保存找回密码问题答案
 + (void)saveAnswer:(NSString *)answer {
     [self setObject:answer forKey:PB_ANSWER];

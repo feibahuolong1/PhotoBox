@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
             <connections>
+                <outlet property="inputTF" destination="PFj-Rt-yHq" id="cuc-6o-Ox8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,24 +20,36 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5q-j4-PHY">
-                    <rect key="frame" x="156" y="100" width="62" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="30" id="UwJ-IN-qWk"/>
-                    </constraints>
-                    <state key="normal" title="设置密码"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKk-Rz-Sge">
-                    <rect key="frame" x="171.5" y="318.5" width="31" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入登录密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PFj-Rt-yHq">
+                    <rect key="frame" x="17" y="150" width="341" height="17"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3g-ru-vYg">
+                    <rect key="frame" x="171.5" y="227" width="31" height="30"/>
                     <state key="normal" title="登录"/>
+                    <connections>
+                        <action selector="loginBtnClick:" destination="-1" eventType="touchUpInside" id="Q9T-S8-HuU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdq-TG-EN2">
+                    <rect key="frame" x="156" y="317" width="62" height="30"/>
+                    <state key="normal" title="忘记密码"/>
+                    <connections>
+                        <action selector="forgetPasswordBtnClick:" destination="-1" eventType="touchUpInside" id="drn-Fi-iBU"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="gKk-Rz-Sge" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="1Fp-2y-a5S"/>
-                <constraint firstItem="z5q-j4-PHY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="Evc-aq-Tcb"/>
-                <constraint firstItem="gKk-Rz-Sge" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HLE-uW-Qh0"/>
-                <constraint firstItem="z5q-j4-PHY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Nyc-qW-z7a"/>
+                <constraint firstItem="bdq-TG-EN2" firstAttribute="top" secondItem="h3g-ru-vYg" secondAttribute="bottom" constant="60" id="7Iy-iD-BBE"/>
+                <constraint firstItem="PFj-Rt-yHq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="150" id="Eie-Hd-CZe"/>
+                <constraint firstItem="PFj-Rt-yHq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="17" id="XrS-DW-opU"/>
+                <constraint firstItem="bdq-TG-EN2" firstAttribute="centerX" secondItem="h3g-ru-vYg" secondAttribute="centerX" id="q1v-EO-3bb"/>
+                <constraint firstItem="h3g-ru-vYg" firstAttribute="top" secondItem="PFj-Rt-yHq" secondAttribute="bottom" constant="60" id="sVa-co-Vvt"/>
+                <constraint firstItem="h3g-ru-vYg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sdE-yN-rxl"/>
+                <constraint firstAttribute="trailing" secondItem="PFj-Rt-yHq" secondAttribute="trailing" constant="17" id="wCy-dO-Vhd"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
         </view>

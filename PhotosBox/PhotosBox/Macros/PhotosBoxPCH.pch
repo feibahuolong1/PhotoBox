@@ -15,4 +15,6 @@
 
 #import "User.h"
 
+#import "UserInfo.h"
+
 #endif /* PhotosBoxPCH_pch */
