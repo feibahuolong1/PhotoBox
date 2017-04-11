@@ -39,4 +39,5 @@
 // 保存伪答案
 + (void)saveHypocrisyAnswer:(NSString *)hypocrisyAnswer;
 
+
 @end

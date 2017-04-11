@@ -1,0 +1,11 @@
+platform :ios, '8.0'
+#use_frameworks!
+
+def pods
+pod 'Toast', '~> 3.1.0'
+pod 'MBProgressHUD', '~> 1.0.0'
+
+end
+target 'PhotosBox' do
+pods
+end

@@ -18,10 +18,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:[HomeViewController new]];
+    CostomViewController *nav = [[CostomViewController alloc]initWithRootViewController:[HomeViewController new]];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
-    NSLog(@"%@",NSHomeDirectory());
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"bar_bg"] forBarMetrics:UIBarMetricsDefault];
+//     [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [FileMethod createDicWithName:@"full"];
+    
     return YES;
 }
 

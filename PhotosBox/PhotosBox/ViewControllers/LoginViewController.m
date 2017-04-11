@@ -8,6 +8,8 @@
 
 #import "LoginViewController.h"
 #import "ChangePassWordViewController.h"
+#import "EmptyViewController.h"
+#import "ShowViewController.h"
 @interface LoginViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *inputTF;
@@ -21,18 +23,21 @@
 //    [self.navigationController.navigationBar setHidden:YES];
     [self.inputTF addTarget:self action:@selector(textValueChange:) forControlEvents:UIControlEventEditingChanged];
 }
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.inputTF.text = @"";
+}
 - (IBAction)loginBtnClick:(id)sender {
     if (self.inputTF.text.length == 0) {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored"-Wdeprecated-declarations"
-         [[[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"密码不能为空" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil]show];
-#pragma clang diagnostic pop
+        PBToast(@"密码不能为空");
     } else if([UserInfo checkPassword:self.inputTF.text] == 1) {
-        NSLog(@"ture");
+//        PBToast(@"ture");
+        [self.navigationController pushViewController:[ShowViewController new] animated:YES];
     } else if ([UserInfo checkPassword:self.inputTF.text] == 2) {
-        NSLog(@"false");
+//        PBToast(@"false");
+        [self.navigationController pushViewController:[EmptyViewController new] animated:YES];
     } else {
-        NSLog(@"error");
+        PBToast(@"密码错误");
     }
 }
 - (IBAction)forgetPasswordBtnClick:(id)sender {
@@ -43,10 +48,7 @@
     NSInteger maxLength = 32;
     if(length > maxLength) {
         textField.text= [textField.text substringToIndex:maxLength];
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored"-Wdeprecated-declarations"
-        [[[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"长度限制为32位" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil]show];
-#pragma clang diagnostic pop
+        PBToast(@"长度限制为32位");
     }
 }
 
